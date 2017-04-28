@@ -1,0 +1,104 @@
+// Place all the styles related to the HomePages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
+@import 'components/_variables';
+@import 'components/_carousel';
+
+
+body {
+    background: $primary-background;
+    font-family: $body-copy;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    color: $primary-text;
+}
+
+.main-nav {
+    line-height: 36px;
+
+    ul {
+        margin-bottom: 0;
+    }
+
+    li.divider {
+        color: $grey;
+    }
+
+    a {
+        text-decoration: none;
+
+        &:hover {
+            border-bottom: ($border-size*5) $border-type $grey;
+            transition: $border-color 0.2s ease;
+
+        }
+    }
+}
+
+.footer {
+    text-align: center;
+    color: $inverse-text;
+    padding-bottom: ($padding * 4);
+
+    .container {
+        background: $inverse-background;
+        padding: ($padding * 4) 0;
+
+        .social-media {
+            padding: $padding 0;
+
+            a {
+                padding: 0 ($padding - .5);
+                color: $white;
+
+                &:hover {
+                    color: $grey;
+
+
+                }
+            }
+        }
+    }
+}
+
+
+// Home page
+.public-banner{
+  .col-lg-12{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  img{
+    width: 100%;
+    height: auto;
+  }
+}
+
+.home-about{
+  padding: ($padding*4) 0 ($padding*6) 0;
+}
+
+.home-food{
+  text-align: center;
+  img{
+    padding-bottom: $padding;
+  }
+}
+
+.reviews{
+  padding: ($padding * 4) 0 ($padding * 6) 0;
+}
+
+// About Page
+.page-body{
+  padding:($padding * 4);
+}
+
+// Menu page
+.menu{
+  padding: ($padding * 2) 0;
+}

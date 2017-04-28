@@ -1,0 +1,125 @@
+<div class="container">
+    <div class="row menu">
+        <div class="col-lg-12">
+            <h2 class="page-header">Appetizers</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <h3>Green Salad</h3>
+                <p>A great healthy start to your meal.
+                    <a href="#" data-toggle='modal' data-target="#salad-modal">View</a>
+                </p>
+                <span class="label label-danger">$5</span>
+            </div>
+            <div class="col-lg-4">
+                <h3>Chicken Wings</h3>
+                <p>One dozen wings, come in hot or bbq flavour.
+                    <a href="#" data-toggle="modal" data-target="#chicken-modal">View</a>
+                </p>
+                <span class="label label-danger">$12</span>
+            </div>
+            <div class="col-lg-4">
+                <h3>Nachos</h3>
+                <p>Great for sharing with friends. Tons of cheese and all the toppings.</p>
+                <span class="label label-danger">$14</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row menu">
+        <div class="col-lg-12">
+            <h2 class="page-header">Sandwiches
+                <small>All sandwiches are served with yam fries or salad.</small>
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <h3>Veggie</h3>
+                <p>tomatoes, lettuce, cheese, salsa.
+                    <a href="#" datatoggle="modal" data-target="#sandwichmodal">View</a>
+                </p>
+                <p class="price">$12</p>
+            </div>
+            <div class="col-lg-4">
+                <h3>Turkey</h3>
+                <p>turkey, lettuce, cranberry, cheese, tomato.</p>
+                <p class="price">$14</p>
+            </div>
+            <div class="col-lg-4">
+                <h3>Roast Beef</h3>
+                <p>roast beef, mustard, pickles.</p>
+                <p class="price">$14</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row menu">
+        <div class="col-lg-12">
+            <h2 class="page-header">Burgers
+                <small>All burgers are served with yam fries or salad.</small>
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <h3>Beef</h3>
+                <p>tomatoes, lettuce, cheese, pickles.</p>
+                <p class="price">$16</p>
+            </div>
+            <div class="col-lg-4">
+                <h3>Chicken</h3>
+                <p>lettuce, cucumber, pickles.</p>
+                <p class="price">$16</p>
+            </div>
+            <div class="col-lg-4">
+                <h3>Veggie</h3>
+                <p>lettuce, mushrooms, salsa.</p>
+                <p class="price">$14</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+
+<!-- Salad Modal -->
+<div class="modal fade" id="salad-modal" tabindex="-1" role="dialog" aria-labelledby="salad-modal" aria-hidden="true">
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">Appetizer</h4>
+        </div>
+        <div class="modal-body">
+            <div class="text-center">
+                <p><%= image_tag "food3.jpg", size:"400x267",alt:"salad" %></p>
+                <h2>Green Salad</h2>
+                <p>A Great healthy start to your meal.</p>
+                <span class="label label-danger">$5</span>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+
+<!-- Chicken Modal -->
+<div class="modal fade" id="chicken-modal" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">Appetizer</h4>
+        </div>
+        <div class="modal-body">
+            <div class="text-center">
+                <p><%= image_tag 'food1.jpg', size:"400x267",alt:'chicken wings' %></p>
+                <h2>Chicken Wings</h2>
+                <p>Best Chicken wings ever!</p>
+                <span class="label label-danger">$9</span>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+</div>

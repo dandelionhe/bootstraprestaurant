@@ -1,0 +1,98 @@
+<!-- Hero Image -->
+<div class="container">
+    <div class="public-banner">
+        <div class="row">
+            <div class="col-lg-12">
+                <%= image_tag("header2.jpg",width:"1170",height:"500", alt:"Public restaurant banner") %>
+            </div>
+        </div>
+    </div>
+    <div class="home-about">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="text-center">
+                    <h2>About</h2>
+                    <div class="row">
+                        <div class="col-lg-6 col-lg-offset-3">
+                            <h4>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</h4>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!--end of about page  -->
+
+    <div class="home-food">
+        <div class="row">
+            <div class="col-lg-3">
+                <%= link_to(image_tag("food1.jpg",size:"250x250",alt:"Feature food 1"),home_pages_Menu_path) %>
+                <h4>Sandwich</h4>
+            </div>
+            <div class="col-lg-3">
+                <%= link_to(image_tag("food2.jpg",size:"250x250",alt:"Feature food 2"),home_pages_Menu_path) %>
+                <h4>Fried Rice</h4>
+            </div>
+            <div class="col-lg-3">
+                <%= link_to(image_tag("food3.jpg",size:"250x250",alt:"Feature food 2"),home_pages_Menu_path) %>
+                <h4>Coffee</h4>
+            </div>
+            <div class="col-lg-3">
+                <%= link_to(image_tag("food4.jpg",size:"250x250",alt:"Feature food 1"),home_pages_Menu_path) %>
+                <h4>Salad</h4>
+            </div>
+        </div>
+    </div>
+
+    <!--end of food page  -->
+
+    <div class="reviews">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="text-center">
+                    <h2>Reviews</h2>
+                    <div id="carousel-reviews" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-reviews" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-reviews" data-slide-to="1"></li>
+                            <li data-target="#carousel-reviews" data-slide-to="2"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <p>This is the best sandwich I've ever had! I Highly recommend trying the chicken sandwich for lunch.</p>
+                            </div>
+                            <div class="item">
+                                <p>The desserts are to die for. Make sure you save enough room after you eat your dinner.</p>
+                            </div>
+                            <div class="item">
+                                <p>They have some of the best locally brewed coffee I have ever tasted. So fresh and eye opening early in the morning.</p>
+                            </div>
+
+                        </div>
+
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-reviews" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-reviews" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- end of reviews -->
+</div>

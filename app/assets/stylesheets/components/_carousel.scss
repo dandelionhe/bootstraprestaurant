@@ -1,0 +1,25 @@
+@import 'variables';
+
+.carousel {
+    .item {
+        padding: $padding ($padding * 12) ($padding * 4) ($padding * 12);
+        font-size: ($font-size * 1.5);
+    }
+}
+
+.carousel-control.left,
+.carousel-control.right {
+    background-image: none;
+}
+
+a.carousel-control {
+    color: $light-grey;
+}
+
+.carousel-indicators li {
+    border: $border-size $border-color $border-type;
+}
+
+.carousel-indicators .active {
+    background: $light-grey;
+}
